@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import Profile from '../Profile'
 
 import styled from 'styled-components'
+import GlobalStyle from '../../styles/global'
 
 const LayoutWrapper = styled.section`
   display: flex;
@@ -18,6 +19,7 @@ const LayoutMain = styled.div`
 const Layout = ({ children }) => {
   return (
     <LayoutWrapper>
+      <GlobalStyle />
       <aside>
         <Profile />
       </aside>
