@@ -3,6 +3,14 @@ import { useStaticQuery, graphql } from 'gatsby'
 
 import Logo from '../Logo'
 
+import {
+  ProfileWrapper,
+  ProfileLink,
+  ProfileAuthor,
+  ProfilePosition,
+  ProfileDescription,
+} from './styles'
+
 const Profile = () => {
   const { site } = useStaticQuery(graphql`
     {
@@ -21,13 +29,17 @@ const Profile = () => {
   } = site
 
   return (
-    <div className="Profile-wrapper">
-      <Logo />
-      <h1>{title}</h1>
-      <h2>{position}</h2>
+    <ProfileWrapper>
+      <ProfileLink to="/">
+        <Logo />
+        <ProfileAuthor>
+          {title}
+          <ProfilePosition>{position}</ProfilePosition>
+        </ProfileAuthor>
+      </ProfileLink>
 
-      <p>{description}</p>
-    </div>
+      <ProfileDescription>{description}</ProfileDescription>
+    </ProfileWrapper>
   )
 }
 
