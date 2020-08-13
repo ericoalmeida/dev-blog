@@ -2,7 +2,7 @@ const { resolve } = require('path')
 
 module.exports = {
   siteMetadata: {
-    title: `GatsbyJs`,
+    title: `Érico Almeida`,
     description: `Desenvolvedor apaixonado por resolução de problemas`,
     position: `Fullstack Developer`,
     author: `@ericoalmeida`,
