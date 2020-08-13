@@ -1,6 +1,7 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
-import Img from 'gatsby-image'
+
+import { LogoWrapper } from './styles'
 
 const Logo = () => {
   const { avatarImage } = useStaticQuery(
@@ -17,7 +18,7 @@ const Logo = () => {
     `
   )
 
-  return <Img fixed={avatarImage.childImageSharp.fixed} />
+  return <LogoWrapper fixed={avatarImage.childImageSharp.fixed} />
 }
 
 export default Logo
