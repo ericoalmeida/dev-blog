@@ -2,6 +2,7 @@ import React from 'react'
 
 import Profile from '../Profile'
 import SocialLinkss from '../SocialLinks'
+import MenuLinks from '../MenuLInks'
 
 import { SidebarWrapper } from './styles'
 
@@ -10,6 +11,7 @@ const SideBar = () => {
     <SidebarWrapper>
       <Profile />
       <SocialLinkss />
+      <MenuLinks />
     </SidebarWrapper>
   )
 }
