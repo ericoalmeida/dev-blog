@@ -1,15 +1,15 @@
 import React from 'react'
 
-import Layout from '../components/Layout'
+import MainLayout from '../components/MainLayout'
 import SEO from '../components/seo'
 
 const About = () => {
   return (
-    <Layout>
+    <MainLayout>
       <SEO />
 
       <h1>About</h1>
-    </Layout>
+    </MainLayout>
   )
 }
 

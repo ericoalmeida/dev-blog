@@ -6,7 +6,7 @@ import GlobalStyle from '../../styles/global'
 
 import { LayoutWrapper, LayoutMain } from './styles'
 
-const Layout = ({ children }) => {
+const MainLayout = ({ children }) => {
   return (
     <LayoutWrapper>
       <GlobalStyle />
@@ -17,8 +17,8 @@ const Layout = ({ children }) => {
   )
 }
 
-Layout.propTypes = {
+MainLayout.propTypes = {
   children: PropTypes.node.isRequired,
 }
 
-export default Layout
+export default MainLayout
