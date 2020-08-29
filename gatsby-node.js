@@ -73,10 +73,12 @@ exports.createPages = ({ graphql, actions }) => {
       createPage({
         path: index === 0 ? `/` : `/page/${index + 1}`,
         component: resolve(__dirname, 'src', 'templates', 'blog-list.js'),
+
+        //O Contexto fica visivel no componente de template para as paginas dos post do blog
         context: {
           limit: postsPerPage,
           skip: index * postsPerPage,
-          numPages,
+          totalPages: numPages,
           currentPage: index + 1,
         },
       })
