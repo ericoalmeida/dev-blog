@@ -12,18 +12,53 @@ Proin suscipit luctus orci placerat fringilla. Donec hendrerit laoreet risus ege
 
 ![Desert](/assets/images/desert.jpg)
 
-```javascript
-const { site } = useStaticQuery(graphql`
-  {
-    site {
-      siteMetadata {
-        title
-        description
-        position
+```jsx
+import React from 'react'
+import { useStaticQuery, graphql } from 'gatsby'
+
+import Logo from '../Logo'
+
+import {
+  ProfileWrapper,
+  ProfileLink,
+  ProfileAuthor,
+  ProfilePosition,
+  ProfileDescription,
+} from './styles'
+
+const Profile = () => {
+  const { site } = useStaticQuery(graphql`
+    {
+      site {
+        siteMetadata {
+          title
+          description
+          position
+        }
       }
     }
-  }
-`)
+  `)
+
+  const {
+    siteMetadata: { title, description, position },
+  } = site
+
+  return (
+    <ProfileWrapper>
+      <ProfileLink to="/">
+        <Logo />
+        <ProfileAuthor>
+          {title}
+          <ProfilePosition>{position}</ProfilePosition>
+        </ProfileAuthor>
+      </ProfileLink>
+
+      <ProfileDescription>{description}</ProfileDescription>
+    </ProfileWrapper>
+  )
+}
+
+export default Profile
 ```
 
 ## Fusce a metus eu
@@ -48,6 +83,34 @@ Pellentesque sed sapien lorem, at lacinia urna. In hac habitasse platea dictumst
 - Dolor
 - Sit
 - amet
+
+```Delphi
+procedure TSPEDContribuicoes.ProcessarRegistros;
+begin
+   with FComponenteSPED do
+   begin
+      DT_INI := FDataInicial;
+      DT_FIN := FDataFinal;
+
+      FBloco0.SPEDPisCofins(FComponenteSPED).GeraBloco_0;
+      FBlocoA.SPEDPisCofins(FComponenteSPED).GeraBloco_A;
+      FBlocoC.SPEDPisCofins(FComponenteSPED).GeraBloco_C;
+      FBlocoD.SPEDPisCofins(FComponenteSPED).GeraBloco_D;
+      FBlocoF.SPEDPisCofins(FComponenteSPED).GeraBloco_F;
+      FBlocoI.SPEDPisCofins(FComponenteSPED).GeraBloco_I;
+      FBlocoM.SPEDPisCofins(FComponenteSPED).GeraBloco_M;
+      FBlocoP.SPEDPisCofins(FComponenteSPED).GeraBloco_P;
+      FBloco1.SPEDPisCofins(FComponenteSPED).GeraBloco_1;
+
+
+      Path    := FParametros.Diretorio;
+      Arquivo := 'SPED_Contrib_' + FormatFloat('00', MonthOf(FDataInicial)) +
+        FormatFloat('0000', YearOf(FDataInicial)) + '.txt';
+
+      SaveFileTXT;
+   end;
+end;
+```
 
 #### Sed enim mi
 

@@ -51,6 +51,9 @@ module.exports = {
           {
             resolve: 'gatsby-remark-lazy-load',
           },
+          {
+            resolve: 'gatsby-remark-prismjs',
+          },
         ],
       },
     },
