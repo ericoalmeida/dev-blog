@@ -84,7 +84,7 @@ Pellentesque sed sapien lorem, at lacinia urna. In hac habitasse platea dictumst
 - Sit
 - amet
 
-```delphi
+```pascal
 procedure TSPEDContribuicoes.ProcessarRegistros;
 begin
    with FComponenteSPED do
@@ -104,8 +104,10 @@ begin
 
 
       Path    := FParametros.Diretorio;
-      Arquivo := 'SPED_Contrib_' + FormatFloat('00', MonthOf(FDataInicial)) +
-        FormatFloat('0000', YearOf(FDataInicial)) + '.txt';
+      Arquivo := 'SPED_Contrib_'                           +
+                 FormatFloat('00', MonthOf(FDataInicial))  +
+                 FormatFloat('0000', YearOf(FDataInicial)) +
+                 '.txt';
 
       SaveFileTXT;
    end;
