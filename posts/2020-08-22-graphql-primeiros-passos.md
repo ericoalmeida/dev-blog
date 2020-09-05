@@ -84,7 +84,7 @@ Pellentesque sed sapien lorem, at lacinia urna. In hac habitasse platea dictumst
 - Sit
 - amet
 
-```Delphi
+```delphi
 procedure TSPEDContribuicoes.ProcessarRegistros;
 begin
    with FComponenteSPED do

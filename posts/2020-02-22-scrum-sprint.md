@@ -1,6 +1,6 @@
 ---
 date: 2020-08-22 09:32:19
-title: Como criar um blog
+title: Scrum sprint
 description: Processo de criação de um blog com Gatsby.js
 category: JS
 background: '#7AAB13'
