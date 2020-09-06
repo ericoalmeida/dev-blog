@@ -1,3 +1,3 @@
-!()[/src/images/gatsby-astronaut.png]
+!(gatsby)[/src/images/gatsby-astronaut.png]
 
 ### 🚀 Blog com **Gatsby.js**
