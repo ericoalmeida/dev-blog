@@ -5,7 +5,7 @@ import ReactDisqusComments from 'react-disqus-comments'
 import { CommentsWrapper, CommentsTitle } from './styles'
 
 const Comments = ({ url, title }) => {
-  const completeURL = `willianjusten.com.br${url}`
+  const completeURL = `http://www.ericoalmeida.dev${url}`
   /**
    * É necessário ter um plano e um site cadastrado no DISQUS para
    * consegui usar as funcionalidades do mesmo
@@ -16,7 +16,7 @@ const Comments = ({ url, title }) => {
       <CommentsTitle>Comentários</CommentsTitle>
 
       <ReactDisqusComments
-        shortname="willianjusten"
+        shortname="ericoalmeida-dev"
         identifier={completeURL}
         title={title}
         url={url}
