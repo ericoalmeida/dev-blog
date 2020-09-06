@@ -2,15 +2,16 @@ import React from 'react'
 
 import MainLayout from '../components/MainLayout'
 import SEO from '../components/seo'
+import Search from '../components/Search'
 
-const About = () => {
+const SearchPage = () => {
   return (
     <MainLayout>
-      <SEO title="About" />
+      <SEO title="SearchPage" />
 
-      <h1>About</h1>
+      <Search />
     </MainLayout>
   )
 }
 
-export default About
+export default SearchPage
