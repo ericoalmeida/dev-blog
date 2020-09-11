@@ -2,8 +2,8 @@ import styled from 'styled-components'
 import { Link } from 'gatsby'
 
 export const RecommendedWrapper = styled.section`
-  border-bottom: 1px solid #38444d;
-  border-top: 1px solid #38444d;
+  border-bottom: 1px solid var(--borders);
+  border-top: 1px solid var(--borders);
   background: #192734;
   display: flex;
 `
@@ -19,11 +19,11 @@ export const RecommendedLink = styled(Link)`
   width: 100%;
 
   &:hover {
-    background: #38444d;
+    background: var(--borders);
   }
 
   &.previous {
-    border-right: 1px solid #38444d;
+    border-right: 1px solid var(--borders);
   }
 
   &.next {

@@ -90,7 +90,7 @@ export const MainContent = styled.section`
     margin: 3.125rem auto;
   }
   hr {
-    border: 1px solid #38444d;
+    border: 1px solid var(--borders);
     margin: 3rem auto;
   }
   #twitter-widget-0,
