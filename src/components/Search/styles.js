@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const SearchWrapper = styled.section`
-  background: #16202c;
+  background: var(--background);
   display: flex;
   flex-direction: column;
   width: 100%;
